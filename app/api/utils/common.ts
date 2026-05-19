@@ -19,3 +19,5 @@ export const setSession = (sessionId: string) => {
 }
 
 export const client = new CompletionClient(API_KEY, API_URL || undefined)
+// 添加调试日志
+console.log('Dify client initialized with:', { API_KEY: API_KEY?.slice(0, 10) + '...', API_URL })
