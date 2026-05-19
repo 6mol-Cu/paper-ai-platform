@@ -5,8 +5,8 @@ export const runtime = 'nodejs'
 export const dynamic = 'force-dynamic'
 export const maxDuration = 60
 
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_PREFIX || process.env.API_PREFIX || 'https://api.dify.ai/v1'
-const API_KEY = process.env.NEXT_PUBLIC_APP_API_KEY || process.env.APP_API_KEY || ''
+const API_BASE_URL = process.env.APP_API_URL || 'http://8.149.128.82/v1'
+const API_KEY = process.env.APP_API_KEY || ''
 
 export async function POST(request: NextRequest) {
   try {
