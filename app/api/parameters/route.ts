@@ -11,6 +11,7 @@ export async function GET(request: NextRequest) {
     })
   }
   catch (error) {
+    console.error('parameters error:', error)
     return NextResponse.json([])
   }
 }
